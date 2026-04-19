@@ -60,16 +60,15 @@ This prototype distills the algorithmic spine of an ongoing research direction o
 
 ## Pipeline
 
-```mermaid
-flowchart LR
-    A[Circuit JSON] --> B[Static Validation]
-    B --> C[MNA-based DC Solver]
-    C --> D[Diagnostic Rules]
-    D --> E[HACP-style Intervention]
-    E --> F[CLI Report / JSON Output]
-```
+<p align="center">
+  <img src="figures/grounded_tutoring_pipeline.png" alt="Grounded Tutoring Pipeline for Electrical Laboratory Learning" width="100%">
+</p>
 
-这个流程刻意保持紧凑：每一步都足够小，方便单独审阅；同时每一步都对下一步提供结构化输入，避免“会算但不会解释”或“会提示但没有物理依据”的断层。
+<p align="center">
+  <em>Figure 1. A grounded tutoring pipeline that links structured circuit representation, physical reasoning, pedagogical diagnostics, and intervention output.</em>
+</p>
+
+这个流程保持了研究原型应有的紧凑性：每一步都足够独立，便于单独审阅；同时每一步都向下一步提供结构化中间表示，避免“会算但不会解释”或“会提示但缺少物理依据”的断层。
 
 ## Quickstart
 
